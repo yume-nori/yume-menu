@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ドリンク・おつまみメニュー</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:#050505}
+.menu{width:min(1400px,96vw);margin:18px auto;border:11px solid #ff3b0a;border-radius:12px;overflow:hidden;background:#fff}
+.panel{position:relative;padding:58px 45px 34px;display:flex;flex-direction:row-reverse;gap:28px;align-items:flex-start;min-height:470px}
+.panel.drinks{background:#fff}
+.panel.food{background:#ffe584;min-height:420px;padding-top:42px}
+.section{display:flex;flex-direction:row-reverse;gap:12px;align-items:flex-start}
+.section h2{writing-mode:vertical-rl;text-orientation:mixed;font-size:28px;line-height:1;margin:0;font-weight:900;white-space:nowrap;letter-spacing:.04em}
+.section.orange h2{color:#ff4b12}
+.items{display:flex;flex-direction:row-reverse;gap:20px;align-items:flex-start}
+.item{writing-mode:vertical-rl;text-orientation:mixed;display:flex;flex-direction:column;align-items:center;min-height:320px;font-weight:900}
+.name{font-size:24px;line-height:1.25;white-space:nowrap;letter-spacing:.03em}
+.price{margin-top:auto;padding-top:12px;font-size:22px;line-height:1.1;white-space:nowrap}
+.food .item{min-height:270px}
+.food .name{font-size:23px}
+.food .price{font-size:21px}
+.badge{position:absolute;right:16px;top:16px;writing-mode:vertical-rl;color:#ff4b12;font-size:35px;font-weight:900;letter-spacing:.08em}
+.beer{position:absolute;left:34px;bottom:22px;font-size:75px;filter:saturate(.8)}
+.skewers{position:absolute;left:30px;bottom:12px;font-size:65px}
+@media(max-width:900px){
+ .menu{width:100%;margin:0;border-width:7px;border-radius:7px}
+ .panel{overflow-x:auto;padding:42px 28px 30px;min-height:450px}
+ .panel.food{min-height:390px}
+ .name{font-size:20px} .price{font-size:18px}
+ .section h2{font-size:24px}
+}
+</style>
+</head>
+<body>
+<div class="menu">
+  <div class="panel drinks">
+    <div class="badge">ドリンク</div>
+    <section class="section"><h2>生ビール</h2><div class="items"><div class="item"><div class="name">生ジョッキ アサヒ</div><div class="price">650円</div></div><div class="item"><div class="name">ウイスキー 角ハイ</div><div class="price">650円</div></div><div class="item"><div class="name">（レモン・コーラ割）</div><div class="price">+50円</div></div></div></section><section class="section orange"><h2>サワー</h2><div class="items"><div class="item"><div class="name">生レモン</div><div class="price">700円</div></div><div class="item"><div class="name">グレープフルーツ</div><div class="price">600円</div></div><div class="item"><div class="name">ピーチ</div><div class="price">600円</div></div><div class="item"><div class="name">シークワーサー</div><div class="price">600円</div></div></div></section><section class="section orange"><h2>焼酎</h2><div class="items"><div class="item"><div class="name">黒霧島（芋）</div><div class="price">600円</div></div><div class="item"><div class="name">赤霧島（芋）</div><div class="price">700円</div></div><div class="item"><div class="name">赤兎馬（芋）</div><div class="price">800円</div></div><div class="item"><div class="name">二階堂（麦）</div><div class="price">600円</div></div><div class="item"><div class="name">中々（麦）</div><div class="price">600円</div></div><div class="item"><div class="name">兼八（麦）</div><div class="price">800円</div></div><div class="item"><div class="name">久米仙の久米仙（泡盛）</div><div class="price">600円</div></div><div class="item"><div class="name">濃いめ・梅干し入</div><div class="price">+100円</div></div><div class="item"><div class="name">（カットレモン・炭酸割り）</div><div class="price">+50円</div></div><div class="item"><div class="name">日本酒（燗・常温）</div><div class="price">1合 800円 / 2合 1600円</div></div><div class="item"><div class="name">梅酒 ロック・ソーダ</div><div class="price">650円</div></div><div class="item"><div class="name">赤ワイン</div><div class="price">600円</div></div><div class="item"><div class="name">白ワイン</div><div class="price">600円</div></div></div></section><section class="section orange"><h2>ソフトドリンク</h2><div class="items"><div class="item"><div class="name">コーラ</div><div class="price">500円</div></div><div class="item"><div class="name">緑茶</div><div class="price">500円</div></div><div class="item"><div class="name">ウーロン茶</div><div class="price">500円</div></div></div></section>
+  </div>
+  <div class="panel food">
+    <div class="badge">スペードおつまみ</div>
+    <div class="beer">🍺</div>
+    <div class="skewers">🍢</div>
+    <section class="section"><h2>スペードおつまみ</h2><div class="items"><div class="item"><div class="name">ぎゅうり 一本漬け</div><div class="price">550円</div></div><div class="item"><div class="name">冷やしトマト</div><div class="price">550円</div></div><div class="item"><div class="name">ポテトサラダ</div><div class="price">600円</div></div><div class="item"><div class="name">枝豆</div><div class="price">500円</div></div><div class="item"><div class="name">キムチ</div><div class="price">500円</div></div><div class="item"><div class="name">味噌マヨきゅうり</div><div class="price">550円</div></div><div class="item"><div class="name">味噌マヨセロリ</div><div class="price">550円</div></div><div class="item"><div class="name">もずく酢</div><div class="price">500円</div></div><div class="item"><div class="name">イカの塩辛</div><div class="price">500円</div></div><div class="item"><div class="name">梅水晶</div><div class="price">650円</div></div><div class="item"><div class="name">クリームチーズ味噌づけ</div><div class="price">500円</div></div><div class="item"><div class="name">うずらニンニク醤油漬け</div><div class="price">500円</div></div></div></section><section class="section orange"><h2>揚げ物</h2><div class="items"><div class="item"><div class="name">ポテトフライ</div><div class="price">600円</div></div><div class="item"><div class="name">カキフライ</div><div class="price">800円</div></div><div class="item"><div class="name">揚げたこ焼き</div><div class="price">650円</div></div><div class="item"><div class="name">ナンコツ唐揚</div><div class="price">600円</div></div></div></section><section class="section"><h2>その他</h2><div class="items"><div class="item"><div class="name">ちくわきゅうり</div><div class="price">550円</div></div><div class="item"><div class="name">マグロ納豆</div><div class="price">650円</div></div><div class="item"><div class="name">だし巻き玉子</div><div class="price">700円</div></div><div class="item"><div class="name">シーフードマヨ</div><div class="price">550円</div></div><div class="item"><div class="name">酢モツ</div><div class="price">550円</div></div></div></section>
+  </div>
+</div>
+</body>
+</html>
